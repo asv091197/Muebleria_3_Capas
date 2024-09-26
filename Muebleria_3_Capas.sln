@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Muebleria_3_Capas", "Mueble
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VO", "VO\VO.csproj", "{EC71D225-94C2-44BF-B90F-7FAA49D7649F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{438CB456-7794-444F-99CB-3E138B18D67E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{D47B1206-6865-4AEE-BA2E-DEDC197D723A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{EC71D225-94C2-44BF-B90F-7FAA49D7649F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC71D225-94C2-44BF-B90F-7FAA49D7649F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC71D225-94C2-44BF-B90F-7FAA49D7649F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{438CB456-7794-444F-99CB-3E138B18D67E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{438CB456-7794-444F-99CB-3E138B18D67E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{438CB456-7794-444F-99CB-3E138B18D67E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{438CB456-7794-444F-99CB-3E138B18D67E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D47B1206-6865-4AEE-BA2E-DEDC197D723A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D47B1206-6865-4AEE-BA2E-DEDC197D723A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D47B1206-6865-4AEE-BA2E-DEDC197D723A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D47B1206-6865-4AEE-BA2E-DEDC197D723A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

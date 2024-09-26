@@ -100,6 +100,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Catalogos\Categorias\FormularioCategorias.aspx" />
+    <Content Include="Catalogos\Categorias\ListarCategorias.aspx" />
+    <Content Include="Catalogos\Cliente\ListaClientes.aspx" />
+    <Content Include="Catalogos\Proveedor\FormularioProveedores.aspx" />
+    <Content Include="Catalogos\Proveedor\ListaProveedores.aspx" />
+    <Content Include="Catalogos\Sucursal\FormularioSucursal.aspx" />
+    <Content Include="Catalogos\Sucursal\ListaSucursal.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -192,6 +199,55 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Catalogos\Categorias\FormularioCategorias.aspx.cs">
+      <DependentUpon>FormularioCategorias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Categorias\FormularioCategorias.aspx.designer.cs">
+      <DependentUpon>FormularioCategorias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Categorias\ListarCategorias.aspx.cs">
+      <DependentUpon>ListarCategorias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Categorias\ListarCategorias.aspx.designer.cs">
+      <DependentUpon>ListarCategorias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Cliente\ListaClientes.aspx.cs">
+      <DependentUpon>ListaClientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Cliente\ListaClientes.aspx.designer.cs">
+      <DependentUpon>ListaClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Proveedor\FormularioProveedores.aspx.cs">
+      <DependentUpon>FormularioProveedores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Proveedor\FormularioProveedores.aspx.designer.cs">
+      <DependentUpon>FormularioProveedores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Proveedor\ListaProveedores.aspx.cs">
+      <DependentUpon>ListaProveedores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Proveedor\ListaProveedores.aspx.designer.cs">
+      <DependentUpon>ListaProveedores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Sucursal\FormularioSucursal.aspx.cs">
+      <DependentUpon>FormularioSucursal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Sucursal\FormularioSucursal.aspx.designer.cs">
+      <DependentUpon>FormularioSucursal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Sucursal\ListaSucursal.aspx.cs">
+      <DependentUpon>ListaSucursal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Sucursal\ListaSucursal.aspx.designer.cs">
+      <DependentUpon>ListaSucursal.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -245,6 +301,23 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="BLL\BLL.csproj">
+      <Project>{d47b1206-6865-4aee-ba2e-dedc197d723a}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="DAL\DAL.csproj">
+      <Project>{438cb456-7794-444f-99cb-3e138b18d67e}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="VO\VO.csproj">
+      <Project>{ec71d225-94c2-44bf-b90f-7faa49d7649f}</Project>
+      <Name>VO</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
