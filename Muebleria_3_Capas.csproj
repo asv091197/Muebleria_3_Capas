@@ -104,12 +104,17 @@
     <Content Include="Catalogos\Categorias\ListarCategorias.aspx" />
     <Content Include="Catalogos\Cliente\FormularioClientes.aspx" />
     <Content Include="Catalogos\Cliente\ListaClientes.aspx" />
+    <Content Include="Catalogos\Empleados\FormularioEmpleado.aspx" />
+    <Content Include="Catalogos\Empleados\ListarEmpleados.aspx" />
     <Content Include="Catalogos\Producto\FormularioProductos.aspx" />
     <Content Include="Catalogos\Producto\ListarProductos.aspx" />
     <Content Include="Catalogos\Proveedor\FormularioProveedores.aspx" />
     <Content Include="Catalogos\Proveedor\ListaProveedores.aspx" />
+    <Content Include="Catalogos\StockVenta\FormularioStock.aspx" />
+    <Content Include="Catalogos\StockVenta\ListarStock.aspx" />
     <Content Include="Catalogos\Sucursal\FormularioSucursal.aspx" />
     <Content Include="Catalogos\Sucursal\ListaSucursal.aspx" />
+    <Content Include="Catalogos\Venta\ListarVenta.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -230,6 +235,20 @@
     <Compile Include="Catalogos\Cliente\ListaClientes.aspx.designer.cs">
       <DependentUpon>ListaClientes.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Catalogos\Empleados\FormularioEmpleado.aspx.cs">
+      <DependentUpon>FormularioEmpleado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Empleados\FormularioEmpleado.aspx.designer.cs">
+      <DependentUpon>FormularioEmpleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Empleados\ListarEmpleados.aspx.cs">
+      <DependentUpon>ListarEmpleados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Empleados\ListarEmpleados.aspx.designer.cs">
+      <DependentUpon>ListarEmpleados.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Catalogos\Producto\FormularioProductos.aspx.cs">
       <DependentUpon>FormularioProductos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -258,6 +277,20 @@
     <Compile Include="Catalogos\Proveedor\ListaProveedores.aspx.designer.cs">
       <DependentUpon>ListaProveedores.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Catalogos\StockVenta\FormularioStock.aspx.cs">
+      <DependentUpon>FormularioStock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\StockVenta\FormularioStock.aspx.designer.cs">
+      <DependentUpon>FormularioStock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\StockVenta\ListarStock.aspx.cs">
+      <DependentUpon>ListarStock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\StockVenta\ListarStock.aspx.designer.cs">
+      <DependentUpon>ListarStock.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Catalogos\Sucursal\FormularioSucursal.aspx.cs">
       <DependentUpon>FormularioSucursal.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -271,6 +304,13 @@
     </Compile>
     <Compile Include="Catalogos\Sucursal\ListaSucursal.aspx.designer.cs">
       <DependentUpon>ListaSucursal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Venta\ListarVenta.aspx.cs">
+      <DependentUpon>ListarVenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Venta\ListarVenta.aspx.designer.cs">
+      <DependentUpon>ListarVenta.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>

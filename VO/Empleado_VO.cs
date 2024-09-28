@@ -42,7 +42,7 @@ namespace VO
 
         public Empleado_VO(DataRow dr)
         {
-            _Id_Empleado = int.Parse(dr["Id_Cliente"].ToString());
+            _Id_Empleado = int.Parse(dr["Id_Empleado"].ToString());
             _Nombre = dr["Nombre"].ToString();
             _Apellido_paterno = dr["Apellido_paterno"].ToString();
             _Apellido_materno = dr["Apellido_materno"].ToString();

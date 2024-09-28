@@ -22,9 +22,9 @@ namespace DAL
                     "@Nombre", empleado.Nombre,
                     "@Apellido_paterno", empleado.Apellido_paterno,
                     "@Apellido_materno", empleado.Apellido_materno,
-                    "@Fecha_Naciminto", empleado.Fecha_nacimiento,
+                    "@Fecha_Nacimiento", empleado.Fecha_nacimiento,
                     "@Direccion", empleado.Direccion,
-                    "@Telono", empleado.Telefono,
+                    "@Telefono", empleado.Telefono,
                     "@Email", empleado.Email);
 
                 if (respuesta != 0)
@@ -74,13 +74,14 @@ namespace DAL
 
             try
             {
-                respuesta = metodos_datos.execute_nonQuery("sp_ActualizarCliente",
+                respuesta = metodos_datos.execute_nonQuery("sp_ActualizarEmpleado",
                     "@Id_Empleado", empleado.Id_Empleado,
+                    "@Nombre",empleado.Nombre,
                    "@Apellido_paterno", empleado.Apellido_paterno,
                     "@Apellido_materno", empleado.Apellido_materno,
-                    "@Fecha_Naciminto", empleado.Fecha_nacimiento,
+                    "@Fecha_nacimiento", empleado.Fecha_nacimiento,
                     "@Direccion", empleado.Direccion,
-                    "@Telono", empleado.Telefono,
+                    "@Telefono", empleado.Telefono,
                     "@Email", empleado.Email
 
                     );

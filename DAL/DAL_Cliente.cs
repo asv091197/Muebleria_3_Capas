@@ -76,11 +76,12 @@ namespace DAL
             {
                 respuesta = metodos_datos.execute_nonQuery("sp_ActualizarCliente",
                     "@Id_Cliente", cliente.Id_Cliente,
+                    "@Nombre",cliente.Nombre,
                    "@Apellido_paterno", cliente.Apellido_paterno,
                     "@Apellido_materno", cliente.Apellido_materno,
-                    "@Fecha_Naciminto", cliente.Fecha_nacimiento,
+                    "@Fecha_nacimiento", cliente.Fecha_nacimiento,
                     "@Direccion", cliente.Direccion,
-                    "@Telono", cliente.Telefono,
+                    "@Telefono", cliente.Telefono,
                     "@Email", cliente.Email
 
                     );

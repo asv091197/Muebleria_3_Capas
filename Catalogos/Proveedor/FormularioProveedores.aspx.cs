@@ -34,18 +34,18 @@ namespace Muebleria_3_Capas.Catalogos.Proveedor
                     if (_proveedor_original.Id_Proveedor != 0)
                     {
                         //quiere decir que si recuperé el objeto y procedo a colocar los valores
-                        Titulo.Text = "Actualizar Camión";
+                        Titulo.Text = "Actualizar Proveedor";
                         Subtitulo.Text = $"Modificar los datos del Proveedor #{_id}";
-                        lblnombre.Text = _proveedor_original.Nombre_Proveedor;
-                        lbldireccion.Text = _proveedor_original.Direccion;
-                        lbltelefono.Text = _proveedor_original.Telefono;
-                        lblemail.Text = _proveedor_original.Email;
+                        txtnombre.Text = _proveedor_original.Nombre_Proveedor;
+                        txtdireccion.Text = _proveedor_original.Direccion;
+                        txttelefono.Text = _proveedor_original.Telefono;
+                        txtemail.Text = _proveedor_original.Email;
                      
                     }
                     else
                     {
                         ////Voy pa' tras
-                        Response.Redirect("listaProveedores.aspx");
+                        Response.Redirect("ListaProveedores.aspx");
                     }
                 }
             }

@@ -19,7 +19,7 @@ namespace DAL
             try
             {
                 respuesta = metodos_datos.execute_nonQuery("spInsertarStockSucursal",
-                    "@Producto _Id",stock_Sucursal.Producto_Id,
+                    "@Producto_Id", stock_Sucursal.Producto_Id,
                     "@Sucursal_Id", stock_Sucursal.Sucursal_Id,
                     "@Cantidad",stock_Sucursal.Cantidad );
 
@@ -72,7 +72,7 @@ namespace DAL
             {
                 respuesta = metodos_datos.execute_nonQuery("sp_ActualizarStockSucursal",
                     "@Id_Stock", stock_Sucursal.Id_Stock,
-                    "@Producto _Id", stock_Sucursal.Producto_Id,
+                    "@Producto_Id", stock_Sucursal.Producto_Id,
                     "@Sucursal_Id", stock_Sucursal.Sucursal_Id,
                     "@Cantidad", stock_Sucursal.Cantidad
                     );

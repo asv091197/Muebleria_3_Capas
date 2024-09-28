@@ -6,9 +6,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Muebleria_3_Capas.Catalogos.Cliente
+namespace Muebleria_3_Capas.Catalogos.Empleados
 {
-    public partial class ListaClientes : System.Web.UI.Page
+    public partial class ListarEmpleados : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -21,18 +21,25 @@ namespace Muebleria_3_Capas.Catalogos.Cliente
         public void cargarGrid()
         {
             //carga la información desde la BLL al GV
-            GVClientes.DataSource = BLL_Cliente.get_Cliente();
+            GVEmpleados.DataSource = BLL_Empleado.get_Empleado();
             //Mostramos los resultado renderizando los información
-            GVClientes.DataBind();
+            GVEmpleados.DataBind();
         }
 
-        protected void GVClientes_RowDeleting(object sender, GridViewDeleteEventArgs e)
+
+
+        protected void Insertar_Click(object sender, EventArgs e)
         {
-            int idcliente = int.Parse(GVClientes.DataKeys[e.RowIndex].Values["Id_Cliente"].ToString());
+            Response.Redirect("FormularioEmpleado.aspx");
+        }
+
+        protected void GVEmpleados_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            int idempleado = int.Parse(GVEmpleados.DataKeys[e.RowIndex].Values["Id_Empleados"].ToString());
             ////Invoco mi método para eliminar camiones desde la BLL
             //string respuesta = BLL_Camiones.eliminar_Camion(idcamion);
             //Invoco mi método para eliminar camiones desde el servicio Web
-            string respuesta = BLL_Cliente.delete_Cliente(idcliente);
+            string respuesta =  BLL_Empleado.delete_Empleado(idempleado);
             //Preparamos el Sweet Alert
             string titulo, msg, tipo;
             if (respuesta.ToUpper().Contains("ERROR"))
@@ -52,35 +59,31 @@ namespace Muebleria_3_Capas.Catalogos.Cliente
             cargarGrid();
         }
 
-        protected void GVClientes_RowCommand(object sender, GridViewCommandEventArgs e)
+        protected void GVEmpleados_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             if (e.CommandName == "Select")
             {
                 int varIndex = int.Parse(e.CommandArgument.ToString());
-                string id = GVClientes.DataKeys[varIndex].Values["Id_Cliente"].ToString();
-                Response.Redirect("FormularioClientes.aspx?Id=" + id);
+                string id = GVEmpleados.DataKeys[varIndex].Values["Id_Empleado"].ToString();
+                Response.Redirect("FormularioEmpleado.aspx?Id=" + id);
             }
-
-
         }
-    protected void GVClientes_RowEditing(object sender, GridViewEditEventArgs e)
+
+        protected void GVEmpleados_RowEditing(object sender, GridViewEditEventArgs e)
         {
 
         }
 
-        protected void GVClientes_RowUpdating(object sender, GridViewUpdateEventArgs e)
+      
+
+        protected void GVEmpleados_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
         {
 
         }
 
-        protected void GVClientes_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
+        protected void GVEmpleados_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
-
-        }
-
-        protected void Insertar_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("FormularioClientes.aspx");
+         
         }
     }
 }

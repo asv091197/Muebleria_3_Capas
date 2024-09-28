@@ -74,6 +74,7 @@ namespace DAL
                 respuesta = metodos_datos.execute_nonQuery("sp_ActualizarProveedor",
                     "@Id_Proveedor", proveedor.Id_Proveedor,
                     "@Nombre_Proveedor", proveedor.Nombre_Proveedor,
+                    "@Direccion",proveedor.Direccion,
                     "@Telefono", proveedor.Telefono,
                     "@Email", proveedor.Email
 
