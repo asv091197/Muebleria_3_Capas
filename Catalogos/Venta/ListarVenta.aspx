@@ -4,7 +4,7 @@
 
           <div class="container">
     <div class="row">
-        <h3>Lista de Stock</h3>
+        <h3>Lista de Ventas</h3>
         <%--Botón de Agregar--%>
         <p>
             <asp:Button ID="Insertar" runat="server" Text="Agregar" CssClass="btn btn-primary btn-xs" Width="85px" OnClick="Insertar_Click"/>
@@ -29,6 +29,13 @@
                 <asp:BoundField DataField="Cliente_Id" HeaderText="Cliente" ItemStyle-Width="85px" />
 
                <asp:BoundField DataField="Empleado_Id" HeaderText="Empleado" ItemStyle-Width="85px" />
+
+
+                 <asp:BoundField DataField="Producto_Id" HeaderText="Producto" ItemStyle-Width="85px" />   
+
+                 <asp:BoundField DataField="Cantidad" HeaderText="Cantidad" ItemStyle-Width="85px" />   
+
+                 <asp:BoundField DataField="Precio_Unitario" HeaderText="Precio Unitario" ItemStyle-Width="85px" />   
 
               <asp:BoundField DataField="Total" HeaderText="Total" ItemStyle-Width="85px" />   
                

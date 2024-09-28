@@ -1,4 +1,5 @@
 ﻿using BLL;
+using DAL;
 using Muebleria_3_Capas.Utilidades;
 using System;
 using System.Collections.Generic;
@@ -94,10 +95,10 @@ namespace Muebleria_3_Capas.Catalogos.Producto
                 }
             }
         }
+
     
 
-
-            protected void btnGuardar_Click(object sender, EventArgs e)
+        protected void btnGuardar_Click(object sender, EventArgs e)
         {
             string titulo = "", respuesta = "", tipo = "", salida = "", msg = " ";
 

@@ -22,6 +22,9 @@ namespace DAL
                     "@Fecha_Venta", venta.Fecha_Venta,
                     "@Cliente_Id", venta.Cliente_Id,
                     "@Empleado_Id", venta.Empleado_Id,
+                    "@Producto_Id",venta.Producto_Id,
+                    "@Cantidad",venta.Cantidad,
+                    "@Precio_Unitario",venta.Precio_Unitario,
                     "@Total", venta.Total);
 
                 if (respuesta != 0)

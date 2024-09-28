@@ -58,7 +58,7 @@ namespace Muebleria_3_Capas.Catalogos.Venta
 
         protected void Insertar_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("FormularioVenta.aspx");
         }
     }
 }

@@ -20,6 +20,7 @@ namespace Muebleria_3_Capas.Catalogos.Venta
                 txtFecha.Text = DateTime.Now.ToString("yyyy-MM-dd");
                 cargar_ddl();
                 cargar_ddl2();
+                cargar_ddl3();
                 //Validar si voy a insertar o a editar
                 if (Request.QueryString["Id"] == null)
                 {
@@ -45,7 +46,10 @@ namespace Muebleria_3_Capas.Catalogos.Venta
 
                         ddlcliente.SelectedValue = _venta.Cliente_Id.ToString();
                         ddlempleado.SelectedValue = _venta.Empleado_Id.ToString();
-                        txttotal.Text = _venta.Total.ToString();
+                        ddlproducto.SelectedValue = _venta.Empleado_Id.ToString();
+                        txtcantidad.Text = _venta.Cantidad.ToString();
+                        txtprecio.Text = _venta.Precio_Unitario.ToString();
+                       // txttotal.Text = _venta.Total.ToString();
                     }
                     else
                     {
@@ -95,6 +99,24 @@ namespace Muebleria_3_Capas.Catalogos.Venta
             }
         }
 
+
+        protected void cargar_ddl3()
+        {
+            ListItem ddlproduto_I = new ListItem("Seleccione un producto", "0");
+            ddlproducto.Items.Add(ddlproduto_I);
+            List<Producto_VO> list_prov = BLL_Producto.get_Producto();
+            if (list_prov.Count > 0)
+            {
+                foreach (var prov in list_prov)
+                {
+                    ListItem prove = new ListItem(
+                        prov.Nombre_Producto,
+                        prov.Id_Producto.ToString()
+                        );
+                    ddlproducto.Items.Add(prove);
+                }
+            }
+        }
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
             string titulo = "", respuesta = "", tipo = "", salida = "", msg = " ";
@@ -106,7 +128,10 @@ namespace Muebleria_3_Capas.Catalogos.Venta
                 _venta_aux.Fecha_Venta = txtFecha.Text;
                 _venta_aux.Cliente_Id = int.Parse(ddlcliente.SelectedValue);
                 _venta_aux.Empleado_Id = int.Parse(ddlempleado.SelectedValue);
-                _venta_aux.Total= int.Parse(txttotal.Text);
+                _venta_aux.Producto_Id = int.Parse(ddlproducto.SelectedValue);
+                _venta_aux.Cantidad = int.Parse(txtcantidad.Text);
+                _venta_aux.Precio_Unitario = float.Parse(txtprecio.Text);
+              //  _venta_aux.Total= float.Parse(txttotal.Text);
 
 
 

@@ -24,9 +24,15 @@
 
         <asp:Label ID="lblEmpleado" runat="server" Text="Empleado"></asp:Label>
         <asp:DropDownList ID="ddlempleado" runat="server" CssClass="form-control"></asp:DropDownList>
+
+        <asp:Label ID="lblproducto" runat="server" Text="Producto"></asp:Label>
+<asp:DropDownList ID="ddlproducto" runat="server" CssClass="form-control"></asp:DropDownList>
  
-        <asp:Label ID="lbltotal" runat="server" Text="Total"></asp:Label>
-        <asp:TextBox ID="txttotal" runat="server" CssClass="form-control"></asp:TextBox>
+        <asp:Label ID="lblcantidad" runat="server" Text="Cantidad"></asp:Label>
+<asp:TextBox ID="txtcantidad" runat="server" CssClass="form-control"></asp:TextBox>
+
+        <asp:Label ID="lblprecio" runat="server" Text="Precio Unitario"></asp:Label>
+<asp:TextBox ID="txtprecio" runat="server" CssClass="form-control"></asp:TextBox>
 
             </div>
     <br />
