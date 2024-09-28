@@ -102,7 +102,10 @@
     <Content Include="About.aspx" />
     <Content Include="Catalogos\Categorias\FormularioCategorias.aspx" />
     <Content Include="Catalogos\Categorias\ListarCategorias.aspx" />
+    <Content Include="Catalogos\Cliente\FormularioClientes.aspx" />
     <Content Include="Catalogos\Cliente\ListaClientes.aspx" />
+    <Content Include="Catalogos\Producto\FormularioProductos.aspx" />
+    <Content Include="Catalogos\Producto\ListarProductos.aspx" />
     <Content Include="Catalogos\Proveedor\FormularioProveedores.aspx" />
     <Content Include="Catalogos\Proveedor\ListaProveedores.aspx" />
     <Content Include="Catalogos\Sucursal\FormularioSucursal.aspx" />
@@ -213,12 +216,33 @@
     <Compile Include="Catalogos\Categorias\ListarCategorias.aspx.designer.cs">
       <DependentUpon>ListarCategorias.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Catalogos\Cliente\FormularioClientes.aspx.cs">
+      <DependentUpon>FormularioClientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Cliente\FormularioClientes.aspx.designer.cs">
+      <DependentUpon>FormularioClientes.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Catalogos\Cliente\ListaClientes.aspx.cs">
       <DependentUpon>ListaClientes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Catalogos\Cliente\ListaClientes.aspx.designer.cs">
       <DependentUpon>ListaClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Producto\FormularioProductos.aspx.cs">
+      <DependentUpon>FormularioProductos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Producto\FormularioProductos.aspx.designer.cs">
+      <DependentUpon>FormularioProductos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Producto\ListarProductos.aspx.cs">
+      <DependentUpon>ListarProductos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Producto\ListarProductos.aspx.designer.cs">
+      <DependentUpon>ListarProductos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Catalogos\Proveedor\FormularioProveedores.aspx.cs">
       <DependentUpon>FormularioProveedores.aspx</DependentUpon>
@@ -280,6 +304,7 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
+    <Compile Include="Utilidades\sweet_Alert.cs" />
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -1,4 +1,5 @@
 ﻿using BLL;
+using Muebleria_3_Capas.Utilidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -52,7 +53,7 @@ namespace Muebleria_3_Capas.Catalogos.Categorias
 
         protected void btnguardar_Click(object sender, EventArgs e)
         {
-            string titulo = "", respuesta = "", tipo = "", salida = "";
+            string titulo = "", respuesta = "", tipo = "", salida = "", msg = " ";
 
             try
             {
@@ -89,12 +90,14 @@ namespace Muebleria_3_Capas.Catalogos.Categorias
                     titulo = "Ops...";
                     respuesta = salida;
                     tipo = "error";
+                    sweet_Alert.Sweet_Alert(titulo, msg, tipo, this.Page, this.GetType());
                 }
                 else
                 {
                     titulo = "Correcto";
                     respuesta = salida;
                     tipo = "success";
+                    sweet_Alert.Sweet_Alert(titulo, msg, tipo, this.Page, this.GetType(), "/Catalogos/Categorias/ListarCategorias.aspx");
                 }
 
             }
@@ -103,6 +106,7 @@ namespace Muebleria_3_Capas.Catalogos.Categorias
                 titulo = "Error";
                 respuesta = ex.Message;
                 tipo = "error";
+                sweet_Alert.Sweet_Alert(titulo, msg, tipo, this.Page, this.GetType());
             }
             //sweet alert
         

@@ -22,7 +22,7 @@ namespace DAL
                     "@Nombre_Producto",producto.Nombre_Producto,
                     "@Descripcion", producto.Descripcion,
                     "@Precio", producto.Precio,
-                    "@Categoria_Id", producto.Categoia_Id,
+                    "@Categoria_Id", producto.Categoria_Id,
                     "@Proveedor_Id", producto.Proveedor_Id
                  );
 
@@ -76,7 +76,7 @@ namespace DAL
                  "@Nombre_Producto", producto.Nombre_Producto,
                     "@Descripcion", producto.Descripcion,
                     "@Precio", producto.Precio,
-                    "@Categoria_Id", producto.Categoia_Id,
+                    "@Categoria_Id", producto.Categoria_Id,
                     "@Proveedor_Id", producto.Proveedor_Id
 
                     );

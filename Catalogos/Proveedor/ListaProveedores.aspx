@@ -24,6 +24,7 @@
                  <asp:BoundField DataField="Id_Proveedor" HeaderText="#" ItemStyle-Width="50px" ReadOnly="true" />
 
                  <asp:BoundField DataField="Nombre_Proveedor" HeaderText="Proveedor" ItemStyle-Width="85px" />
+         
 
                  <asp:BoundField DataField="Direccion" HeaderText="Direccion" ItemStyle-Width="85px" />
 

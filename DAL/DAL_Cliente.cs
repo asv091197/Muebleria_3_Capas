@@ -22,9 +22,9 @@ namespace DAL
                     "@Nombre",cliente.Nombre,
                     "@Apellido_paterno", cliente.Apellido_paterno,
                     "@Apellido_materno", cliente.Apellido_materno,
-                    "@Fecha_Naciminto", cliente.Fecha_nacimiento,
+                    "@Fecha_nacimiento", cliente.Fecha_nacimiento,
                     "@Direccion",cliente.Direccion,
-                    "@Telono",cliente.Telefono,
+                    "@Telefono",cliente.Telefono,
                     "@Email",cliente.Email);
 
                 if (respuesta != 0)
@@ -52,7 +52,7 @@ namespace DAL
             try
             {
                 //crear un Dataset el cual recibirá lo que devuelva la ejecución del método "execute_Dataset" proviniente de la clase "metodos_Datos"
-                DataSet ds_cliente = metodos_datos.execute_DataSet("ListarClietes", parametros);
+                DataSet ds_cliente = metodos_datos.execute_DataSet("ListarClientes", parametros);
                 //recorremos cada renglón existente de nuestro ds crando objetos VO y añadiéndolo la lista
                 foreach (DataRow dr in ds_cliente.Tables[0].Rows)
                 {
