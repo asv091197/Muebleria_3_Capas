@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -34,6 +35,17 @@ namespace DAL
                 else
                 {
                     salida = "Ha ocurrido un error";
+                }
+            }
+            catch (SqlException ex) // Capturar errores de SQL
+            {
+                if (ex.Number == 50000) // Si el error proviene del trigger
+                {
+                    salida = "Error: No hay suficiente stock disponible.";
+                }
+                else
+                {
+                    salida = "Error SQL: " + ex.Message;
                 }
             }
             catch (Exception e)
@@ -114,7 +126,7 @@ namespace DAL
 
                 if (respuesta != 0)
                 {
-                    salida = "Stock eliminado con éxito";
+                    salida = "Venta eliminado con éxito";
                 }
                 else
                 {

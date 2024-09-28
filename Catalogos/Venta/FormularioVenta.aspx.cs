@@ -3,6 +3,7 @@ using DAL;
 using Muebleria_3_Capas.Utilidades;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -166,15 +167,34 @@ namespace Muebleria_3_Capas.Catalogos.Venta
                 }
 
             }
+            catch (SqlException ex)
+            {
+                // Capturar errores SQL, incluyendo los del trigger
+                if (ex.Number == 50000) // RAISERROR en SQL Server tiene código de error 50000
+                {
+                    titulo = "Error en stock";
+                    respuesta = "No hay suficiente stock disponible.";
+                }
+                else
+                {
+                    titulo = "Error SQL";
+                    respuesta = ex.Message;
+                }
+                tipo = "error";
+                sweet_Alert.Sweet_Alert(titulo, respuesta, tipo, this.Page, this.GetType());
+            }
             catch (Exception ex)
             {
+                // Manejar otros errores
                 titulo = "Error";
                 respuesta = ex.Message;
                 tipo = "error";
-                sweet_Alert.Sweet_Alert(titulo, msg, tipo, this.Page, this.GetType());
+                sweet_Alert.Sweet_Alert(titulo, respuesta, tipo, this.Page, this.GetType());
             }
-            //sweet alert
-
         }
+        //sweet alert
+
     }
+
     }
+    

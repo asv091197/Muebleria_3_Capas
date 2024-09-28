@@ -1,4 +1,5 @@
 ﻿using BLL;
+using Muebleria_3_Capas.Utilidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,8 +20,8 @@ namespace Muebleria_3_Capas.Catalogos.Proveedor
                 if (Request.QueryString["ID"] == null)
                 {
                     //Voy a insertar
-                    Titulo.Text = "Agregar Camión";
-                    Subtitulo.Text = "Registro de un nuevo camión";
+                   // Titulo.Text = "Agregar Camión";
+                    //Subtitulo.Text = "Registro de un nuevo camión";
                   
                 }
                 else
@@ -53,7 +54,7 @@ namespace Muebleria_3_Capas.Catalogos.Proveedor
 
         protected void btnguardar_Click(object sender, EventArgs e)
         {
-            string titulo = "", respuesta = "", tipo = "", salida = "";
+            string titulo = "", respuesta = "", tipo = "", salida = "", msg = " ";
 
             try
             {
@@ -100,6 +101,7 @@ namespace Muebleria_3_Capas.Catalogos.Proveedor
                     titulo = "Correcto";
                     respuesta = salida;
                     tipo = "success";
+                    sweet_Alert.Sweet_Alert(titulo, msg, tipo, this.Page, this.GetType(), "/Catalogos/Proveedor/ListaProveedores.aspx");
                 }
 
             }

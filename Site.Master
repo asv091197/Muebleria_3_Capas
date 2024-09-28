@@ -51,8 +51,14 @@
                 <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/About">Acerca de</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contacto</a></li>
+                        
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Catalogos/Categorias/FormularioCategorias.aspx">Categorias</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Catalogos/Cliente/FormularioClientes.aspx">Clientes</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Catalogos/Empleados/FormularioEmpleado.aspx">Empleados</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Catalogos/Producto/FormularioProductos.aspx">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Catalogos/Proveedor/FormularioProveedores.aspx">Proveedor</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Catalogos/StockVenta/FormularioStock.aspx">Stock</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Catalogos/Venta/FormularioVenta.aspx">Ventas</a></li>
                     </ul>
                 </div>
             </div>

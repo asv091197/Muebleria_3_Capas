@@ -28,7 +28,7 @@ namespace DAL
 
                 if (respuesta != 0)
                 {
-                    salida = "Empleado registrado con éxito";
+                    salida = "Producto registrado con éxito";
                 }
                 else
                 {

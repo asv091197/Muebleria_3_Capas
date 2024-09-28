@@ -112,7 +112,7 @@ namespace DAL
 
                 if (respuesta != 0)
                 {
-                    salida = "Categoria eliminado con éxito";
+                    salida = "Proveedor eliminado con éxito";
                 }
                 else
                 {

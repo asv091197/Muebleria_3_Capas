@@ -29,7 +29,7 @@ namespace DAL
 
                 if (respuesta != 0)
                 {
-                    salida = "Proveedor registrado con éxito";
+                    salida = "Cliente registrado con éxito";
                 }
                 else
                 {
