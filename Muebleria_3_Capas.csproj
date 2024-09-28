@@ -114,6 +114,7 @@
     <Content Include="Catalogos\StockVenta\ListarStock.aspx" />
     <Content Include="Catalogos\Sucursal\FormularioSucursal.aspx" />
     <Content Include="Catalogos\Sucursal\ListaSucursal.aspx" />
+    <Content Include="Catalogos\Venta\FormularioVenta.aspx" />
     <Content Include="Catalogos\Venta\ListarVenta.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
@@ -304,6 +305,13 @@
     </Compile>
     <Compile Include="Catalogos\Sucursal\ListaSucursal.aspx.designer.cs">
       <DependentUpon>ListaSucursal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Venta\FormularioVenta.aspx.cs">
+      <DependentUpon>FormularioVenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Venta\FormularioVenta.aspx.designer.cs">
+      <DependentUpon>FormularioVenta.aspx</DependentUpon>
     </Compile>
     <Compile Include="Catalogos\Venta\ListarVenta.aspx.cs">
       <DependentUpon>ListarVenta.aspx</DependentUpon>

@@ -34,7 +34,7 @@ namespace VO
         {
             _Id_Venta = int.Parse(dr["Id_Venta"].ToString());
             _Fecha_Venta = dr["Fecha_Venta"].ToString();
-            _Cliente_Id = int.Parse(dr["Cliente"].ToString());
+            _Cliente_Id = int.Parse(dr["Cliente_Id"].ToString());
             _Empleado_Id = int.Parse(dr["Empleado_Id"].ToString());
         }
     }

@@ -15,25 +15,25 @@
             CssClass="table table-bordered table-striped table-condensed"
             AutoGenerateColumns="false"
             DataKeyNames="Id_Venta"
-            OnRowDeleting="GVStock_RowDeleting"
-            OnRowCommand="GVStock_RowCommand"
-            OnRowEditing="GVStock_RowEditing"
-            OnRowUpdating="GVStock_RowUpdating"
-            OnRowCancelingEdit="GVStock_RowCancelingEdit" OnSelectedIndexChanged="GVStock_SelectedIndexChanged">
+            OnRowDeleting="GVVenta_RowDeleting"
+            OnRowCommand="GVVenta_RowCommand"
+            OnRowEditing="GVVenta_RowEditing"
+            OnRowUpdating="GVVenta_RowUpdating"
+            OnRowCancelingEdit="GVVenta_RowCancelingEdit" OnSelectedIndexChanged="GVVenta_SelectedIndexChanged">
 
             <Columns>
-                <asp:BoundField DataField="Id_Stock" HeaderText="#" ItemStyle-Width="50px" ReadOnly="true" />
+                <asp:BoundField DataField="Id_Venta" HeaderText="#" ItemStyle-Width="50px" ReadOnly="true" />
 
-                <asp:BoundField DataField="Producto_Id" HeaderText="Producto" ItemStyle-Width="85px" />
+                <asp:BoundField DataField="Fecha_Venta" HeaderText="Fecha Venta" ItemStyle-Width="85px" />
 
-                <asp:BoundField DataField="Sucursal_Id" HeaderText="Descripcion" ItemStyle-Width="85px" />
+                <asp:BoundField DataField="Cliente_Id" HeaderText="Cliente" ItemStyle-Width="85px" />
 
-               <asp:BoundField DataField="Cantidad" HeaderText="Precio" ItemStyle-Width="85px" />
+               <asp:BoundField DataField="Empleado_Id" HeaderText="Empleado" ItemStyle-Width="85px" />
 
-              
+              <asp:BoundField DataField="Total" HeaderText="Total" ItemStyle-Width="85px" />   
                
 
-                <asp:ButtonField ButtonType="Button" CommandName="Select" HeaderText="1" Text="Ver Detalles" ControlStyle-CssClass="btn btn-primary btn-xs" ItemStyle-Width="50px" />
+               
                
 
                 <asp:CommandField ButtonType="Button" HeaderText="2" ShowDeleteButton="true" ShowHeader="true" ControlStyle-CssClass="btn btn-danger btn-xs" ItemStyle-Width="50px" />
